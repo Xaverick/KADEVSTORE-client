@@ -9,6 +9,10 @@ import Newsletter from "./components/Footer/Newsletter/Newsletter";
 import Login from "./components/auth/login/login"
 import Register from "./components/auth/register/register"
 import AppContext from "./utils/context";
+import {disableReactDevTools} from "@fvilers/disable-react-devtools";
+
+if(process.env.NODE_ENV === 'production') disableReactDevTools();
+
 const link = 'https://kadevstore.onrender.com';
 function App() {
     return (
